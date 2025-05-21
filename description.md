@@ -46,9 +46,6 @@ Metode yang digunakan dalam project ini mencakup:
 
 * Statistik Inferensial: Pengujian hipotesis menggunakan t-test dua sampel independen untuk membandingkan lead time antara reservasi yang dibatalkan dan tidak
 
-## Screenshot Dashboard Tableau
-
-![alt text](screenshot_tableau.png)
 
 ## Stacks
 Beberapa tools dan library yang digunakan :
