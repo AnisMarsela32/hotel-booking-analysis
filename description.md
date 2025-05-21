@@ -1,37 +1,77 @@
 # Judul Project
 
 ## Repository Outline
-`Bagian ini menjelaskan secara singkat konten/isi dari file yang dipush ke repository`
 
-Contoh:
-```
 1. README.md - Penjelasan gambaran umum project
-2. notebook.ipynb - Notebook yang berisi pengolahan data dengan python
-dst.
-```
+2. P0M1_anis_marsela.ipynb - Notebook yang berisi pengolahan analisi data dengan python
+3. hotel_bookings.csv - Dataset mentah dari Kaggle
+4. data_bersih_hotel_bookings.csv - Dataset yang sudah dibersihkan
+5. description.md - penjelasan tambahan mengenai proses dan insight
+6. assignment_rubrics.png - Rubrik penilaian untuk project
+7. screenshot_tableau - visualisasi dashboard
+
+
 
 ## Problem Background
-`Bagian ini menjelaskan masalah yang diselesaikan pada project ini beserta latar belakang masalahnya secara singkat`
+Pembatalan reservasi hotel menjadi tantangan dalam industri perhotelan. Masalah ini dapat mempengaruhi pendapatan dan efisiensi operasional. Dengan itu penting untuk memahami pola pembatalan dari data historis agar dapat membuat strategi yang lebih baik bagi manajemen hotel. Kita bisa cari tahu faktor-faktor apa saja yang menyebabkan pembatalan. Hasil analisi ini berguna untuk mengambil keputusan bisnis.
 
 ## Project Output
-`Bagian ini menjelaskan secara singkat output projectnya apa, misal model machine learning, dasboard, dsb.`
+Output dari project ini terdiri dari:
+
+* Notebook analisis data untuk mengeksplorasi dan memahami faktor-faktor pembatalan
+
+* Visualisasi dalam bentuk dashboard menggunakan Tableau
+
+* Ringkasan statistik deskriptif dan inferensial
+
+* Insight dan rekomendasi untuk membantu pengambilan keputusan bisnis
 
 ## Data
-`Bagian ini menjelaskan secara singkat mengenai data yang digunakan seperti sumber data, deskripsi singkat karakteristik data seperti jumlah kolom, baris data, missing values, dsb`
+Dataset yang digunakan adalah Hotel Booking Demand dari Kaggle. Berikut infomasi penting tentang datasetnya : 
+
+* Jumlah kolom: 32
+
+* Jumlah baris: sekitar 119.000
+
+* Terdapat missing value, terutama pada kolom agent, company, dan country
+
+* Beberapa kolom bertipe kategorikal, numerik, dan tanggal
 
 ## Method
-`Bagian ini menjelaskan metode yang digunakan pada project, misal project ini mengenai machine learning sehingga metode yang dipakai adalah model supervised learning dengan model KNN`
+Metode yang digunakan dalam project ini mencakup:
+
+* Exploratory Data Analysis (EDA): Analisis visual dan statistik untuk memahami pola data
+
+* Statistik Deskriptif: Menghitung rata-rata, median, standar deviasi dll
+
+* Statistik Inferensial: Pengujian hipotesis menggunakan t-test dua sampel independen untuk membandingkan lead time antara reservasi yang dibatalkan dan tidak
+
+## Screenshot Dashboard Tableau
+
+![alt text](screenshot_tableau.png)
 
 ## Stacks
-`Bagian ini menjelaskan stacks yang digunakan seperti bahasa pemrograman, tools, dan library Python yang digunakan`
+Beberapa tools dan library yang digunakan :
+
+* Python : Bahasa pemrograman utama
+
+* Pandas : untuk manipulasi data
+
+* Matplotlib dan seabor : visualisasi data
+
+* jupyter Notebook: menulis dan menjalankan kode Python
+
+* Tableau: membuat visualisasi dashboard
+
+* Github: menyimpan dan membagikan project
+
 
 ## Reference
-`Bagian ini berisi link pendukung seperti referensi, dashboard, atau deployment`
+- [Pandas Tutorial - W3schools](https://www.w3schools.com/python/pandas/default.asp)
+
+- [Matplotlib Pyplot Tutorial](https://www.w3schools.com/python/matplotlib_intro.asp)
+
+- [Visualisasi Data di Python - Youtube](https://www.youtube.com/@megabagusherlambang/videos)
 
 ---
 
-**Referensi tambahan:**
-- [Basic Writing and Syntax on Markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
-- [Contoh readme](https://github.com/fahmimnalfrzki/Swift-XRT-Automation)
-- [Another example](https://github.com/sanggusti/final_bangkit) (**Must read**)
-- [Additional reference](https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/)

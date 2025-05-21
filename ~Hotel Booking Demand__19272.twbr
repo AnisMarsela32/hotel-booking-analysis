@@ -1,0 +1,1835 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20251.25.0313.2002                               -->
+<workbook original-version='18.1' source-build='2025.1.0 (20251.25.0313.2002)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='HotelBookingDemand_17478172176070' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='data_bersih_hotel_bookings' inline='true' name='federated.1rve6yb1e80a2g18ki32m014kt9b' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='data_bersih_hotel_bookings' name='textscan.1yv1w3r0m9eqrn15b51qs0qutnsb'>
+            <connection class='textscan' directory='C:/Users/USER/Documents/Hacktiv8/Milestone/Milestone 01/p0-ftds043-rmt-m1-AnisMarsela32' filename='data_bersih_hotel_bookings.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1yv1w3r0m9eqrn15b51qs0qutnsb' name='data_bersih_hotel_bookings.csv' table='[data_bersih_hotel_bookings#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_ID'>
+            <column datatype='string' name='hotel' ordinal='0' />
+            <column datatype='integer' name='is_canceled' ordinal='1' />
+            <column datatype='integer' name='lead_time' ordinal='2' />
+            <column datatype='integer' name='arrival_date_week_number' ordinal='3' />
+            <column datatype='integer' name='stays_in_weekend_nights' ordinal='4' />
+            <column datatype='integer' name='stays_in_week_nights' ordinal='5' />
+            <column datatype='integer' name='adults' ordinal='6' />
+            <column datatype='string' name='children' ordinal='7' />
+            <column datatype='integer' name='babies' ordinal='8' />
+            <column datatype='string' name='meal' ordinal='9' />
+            <column datatype='string' name='country' ordinal='10' />
+            <column datatype='string' name='market_segment' ordinal='11' />
+            <column datatype='string' name='distribution_channel' ordinal='12' />
+            <column datatype='integer' name='is_repeated_guest' ordinal='13' />
+            <column datatype='integer' name='previous_cancellations' ordinal='14' />
+            <column datatype='integer' name='previous_bookings_not_canceled' ordinal='15' />
+            <column datatype='string' name='reserved_room_type' ordinal='16' />
+            <column datatype='string' name='assigned_room_type' ordinal='17' />
+            <column datatype='integer' name='booking_changes' ordinal='18' />
+            <column datatype='string' name='deposit_type' ordinal='19' />
+            <column datatype='string' name='agent' ordinal='20' />
+            <column datatype='integer' name='days_in_waiting_list' ordinal='21' />
+            <column datatype='string' name='customer_type' ordinal='22' />
+            <column datatype='string' name='adr' ordinal='23' />
+            <column datatype='integer' name='required_car_parking_spaces' ordinal='24' />
+            <column datatype='integer' name='total_of_special_requests' ordinal='25' />
+            <column datatype='string' name='reservation_status' ordinal='26' />
+            <column datatype='date' name='arrival_date' ordinal='27' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[data_bersih_hotel_bookings.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;Rp&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_ID&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot;.&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hotel</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[hotel]</local-name>
+            <parent-name>[data_bersih_hotel_bookings.csv]</parent-name>
+            <remote-alias>hotel</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[data_bersih_hotel_bookings.csv_4721CAC8250C48B9BD4FC53674673D35]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>is_canceled</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[is_canceled]</local-name>
+            <parent-name>[data_bersih_hotel_bookings.csv]</parent-name>
+            <remote-alias>is_canceled</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[data_bersih_hotel_bookings.csv_4721CAC8250C48B9BD4FC53674673D35]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lead_time</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[lead_time]</local-name>
+            <parent-name>[data_bersih_hotel_bookings.csv]</parent-name>
+            <remote-alias>lead_time</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[data_bersih_hotel_bookings.csv_4721CAC8250C48B9BD4FC53674673D35]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>arrival_date_week_number</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[arrival_date_week_number]</local-name>
+            <parent-name>[data_bersih_hotel_bookings.csv]</parent-name>
+            <remote-alias>arrival_date_week_number</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[data_bersih_hotel_bookings.csv_4721CAC8250C48B9BD4FC53674673D35]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stays_in_weekend_nights</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[stays_in_weekend_nights]</local-name>
+            <parent-name>[data_bersih_hotel_bookings.csv]</parent-name>
+            <remote-alias>stays_in_weekend_nights</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[data_bersih_hotel_bookings.csv_4721CAC8250C48B9BD4FC53674673D35]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stays_in_week_nights</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[stays_in_week_nights]</local-name>
+            <parent-name>[data_bersih_hotel_bookings.csv]</parent-name>
+            <remote-alias>stays_in_week_nights</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[data_bersih_hotel_bookings.csv_4721CAC8250C48B9BD4FC53674673D35]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>adults</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[adults]</local-name>
+            <parent-name>[data_bersih_hotel_bookings.csv]</parent-name>
+            <remote-alias>adults</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[data_bersih_hotel_bookings.csv_4721CAC8250C48B9BD4FC53674673D35]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>children</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[children]</local-name>
+            <parent-name>[data_bersih_hotel_bookings.csv]</parent-name>
+            <remote-alias>children</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[data_bersih_hotel_bookings.csv_4721CAC8250C48B9BD4FC53674673D35]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>babies</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[babies]</local-name>
+            <parent-name>[data_bersih_hotel_bookings.csv]</parent-name>
+            <remote-alias>babies</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[data_bersih_hotel_bookings.csv_4721CAC8250C48B9BD4FC53674673D35]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>meal</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[meal]</local-name>
+            <parent-name>[data_bersih_hotel_bookings.csv]</parent-name>
+            <remote-alias>meal</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[data_bersih_hotel_bookings.csv_4721CAC8250C48B9BD4FC53674673D35]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[country]</local-name>
+            <parent-name>[data_bersih_hotel_bookings.csv]</parent-name>
+            <remote-alias>country</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[data_bersih_hotel_bookings.csv_4721CAC8250C48B9BD4FC53674673D35]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>market_segment</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[market_segment]</local-name>
+            <parent-name>[data_bersih_hotel_bookings.csv]</parent-name>
+            <remote-alias>market_segment</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[data_bersih_hotel_bookings.csv_4721CAC8250C48B9BD4FC53674673D35]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>distribution_channel</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[distribution_channel]</local-name>
+            <parent-name>[data_bersih_hotel_bookings.csv]</parent-name>
+            <remote-alias>distribution_channel</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[data_bersih_hotel_bookings.csv_4721CAC8250C48B9BD4FC53674673D35]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>is_repeated_guest</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[is_repeated_guest]</local-name>
+            <parent-name>[data_bersih_hotel_bookings.csv]</parent-name>
+            <remote-alias>is_repeated_guest</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[data_bersih_hotel_bookings.csv_4721CAC8250C48B9BD4FC53674673D35]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>previous_cancellations</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[previous_cancellations]</local-name>
+            <parent-name>[data_bersih_hotel_bookings.csv]</parent-name>
+            <remote-alias>previous_cancellations</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[data_bersih_hotel_bookings.csv_4721CAC8250C48B9BD4FC53674673D35]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>previous_bookings_not_canceled</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[previous_bookings_not_canceled]</local-name>
+            <parent-name>[data_bersih_hotel_bookings.csv]</parent-name>
+            <remote-alias>previous_bookings_not_canceled</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[data_bersih_hotel_bookings.csv_4721CAC8250C48B9BD4FC53674673D35]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reserved_room_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[reserved_room_type]</local-name>
+            <parent-name>[data_bersih_hotel_bookings.csv]</parent-name>
+            <remote-alias>reserved_room_type</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[data_bersih_hotel_bookings.csv_4721CAC8250C48B9BD4FC53674673D35]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>assigned_room_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[assigned_room_type]</local-name>
+            <parent-name>[data_bersih_hotel_bookings.csv]</parent-name>
+            <remote-alias>assigned_room_type</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[data_bersih_hotel_bookings.csv_4721CAC8250C48B9BD4FC53674673D35]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>booking_changes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[booking_changes]</local-name>
+            <parent-name>[data_bersih_hotel_bookings.csv]</parent-name>
+            <remote-alias>booking_changes</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[data_bersih_hotel_bookings.csv_4721CAC8250C48B9BD4FC53674673D35]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>deposit_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[deposit_type]</local-name>
+            <parent-name>[data_bersih_hotel_bookings.csv]</parent-name>
+            <remote-alias>deposit_type</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[data_bersih_hotel_bookings.csv_4721CAC8250C48B9BD4FC53674673D35]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>agent</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[agent]</local-name>
+            <parent-name>[data_bersih_hotel_bookings.csv]</parent-name>
+            <remote-alias>agent</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[data_bersih_hotel_bookings.csv_4721CAC8250C48B9BD4FC53674673D35]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>days_in_waiting_list</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[days_in_waiting_list]</local-name>
+            <parent-name>[data_bersih_hotel_bookings.csv]</parent-name>
+            <remote-alias>days_in_waiting_list</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[data_bersih_hotel_bookings.csv_4721CAC8250C48B9BD4FC53674673D35]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[customer_type]</local-name>
+            <parent-name>[data_bersih_hotel_bookings.csv]</parent-name>
+            <remote-alias>customer_type</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[data_bersih_hotel_bookings.csv_4721CAC8250C48B9BD4FC53674673D35]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>adr</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[adr]</local-name>
+            <parent-name>[data_bersih_hotel_bookings.csv]</parent-name>
+            <remote-alias>adr</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[data_bersih_hotel_bookings.csv_4721CAC8250C48B9BD4FC53674673D35]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>required_car_parking_spaces</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[required_car_parking_spaces]</local-name>
+            <parent-name>[data_bersih_hotel_bookings.csv]</parent-name>
+            <remote-alias>required_car_parking_spaces</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[data_bersih_hotel_bookings.csv_4721CAC8250C48B9BD4FC53674673D35]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_of_special_requests</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_of_special_requests]</local-name>
+            <parent-name>[data_bersih_hotel_bookings.csv]</parent-name>
+            <remote-alias>total_of_special_requests</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[data_bersih_hotel_bookings.csv_4721CAC8250C48B9BD4FC53674673D35]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reservation_status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[reservation_status]</local-name>
+            <parent-name>[data_bersih_hotel_bookings.csv]</parent-name>
+            <remote-alias>reservation_status</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[data_bersih_hotel_bookings.csv_4721CAC8250C48B9BD4FC53674673D35]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>arrival_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[arrival_date]</local-name>
+            <parent-name>[data_bersih_hotel_bookings.csv]</parent-name>
+            <remote-alias>arrival_date</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[data_bersih_hotel_bookings.csv_4721CAC8250C48B9BD4FC53674673D35]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[:Measure Names]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;[federated.1rve6yb1e80a2g18ki32m014kt9b].[avg:lead_time:qk]&quot;' value='Rata-rata' />
+          <alias key='&quot;[federated.1rve6yb1e80a2g18ki32m014kt9b].[cnt:lead_time:qk]&quot;' value='Jumlah Data' />
+          <alias key='&quot;[federated.1rve6yb1e80a2g18ki32m014kt9b].[med:lead_time:qk]&quot;' value='Median' />
+          <alias key='&quot;[federated.1rve6yb1e80a2g18ki32m014kt9b].[std:lead_time:qk]&quot;' value='Standar Deviasi' />
+        </aliases>
+      </column>
+      <column caption='data_bersih_hotel_bookings.csv' datatype='table' name='[__tableau_internal_object_id__].[data_bersih_hotel_bookings.csv_4721CAC8250C48B9BD4FC53674673D35]' role='measure' type='quantitative' />
+      <column caption='Adr' datatype='string' name='[adr]' role='dimension' type='nominal' />
+      <column caption='Adults' datatype='integer' name='[adults]' role='measure' type='quantitative' />
+      <column caption='Agent' datatype='string' name='[agent]' role='dimension' type='nominal' />
+      <column caption='Arrival Date' datatype='date' name='[arrival_date]' role='dimension' type='ordinal' />
+      <column caption='Arrival Date Week Number' datatype='integer' name='[arrival_date_week_number]' role='dimension' type='ordinal' />
+      <column caption='Assigned Room Type' datatype='string' name='[assigned_room_type]' role='dimension' type='nominal' />
+      <column caption='Babies' datatype='integer' name='[babies]' role='measure' type='quantitative' />
+      <column caption='Booking Changes' datatype='integer' name='[booking_changes]' role='measure' type='quantitative' />
+      <column caption='Children' datatype='string' name='[children]' role='dimension' type='nominal' />
+      <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Customer Type' datatype='string' name='[customer_type]' role='dimension' type='nominal' />
+      <column caption='Days In Waiting List' datatype='integer' name='[days_in_waiting_list]' role='measure' type='quantitative' />
+      <column caption='Deposit Type' datatype='string' name='[deposit_type]' role='dimension' type='nominal' />
+      <column caption='Distribution Channel' datatype='string' name='[distribution_channel]' role='dimension' type='nominal' />
+      <column caption='Hotel' datatype='string' name='[hotel]' role='dimension' type='nominal' />
+      <column aggregation='Sum' caption='Is Canceled' datatype='integer' name='[is_canceled]' role='dimension' type='ordinal' />
+      <column caption='Is Repeated Guest' datatype='integer' name='[is_repeated_guest]' role='measure' type='quantitative' />
+      <column caption='Lead Time' datatype='integer' name='[lead_time]' role='measure' type='quantitative' />
+      <column caption='Market Segment' datatype='string' name='[market_segment]' role='dimension' type='nominal' />
+      <column caption='Meal' datatype='string' name='[meal]' role='dimension' type='nominal' />
+      <column caption='Previous Bookings Not Canceled' datatype='integer' name='[previous_bookings_not_canceled]' role='measure' type='quantitative' />
+      <column caption='Previous Cancellations' datatype='integer' name='[previous_cancellations]' role='measure' type='quantitative' />
+      <column caption='Required Car Parking Spaces' datatype='integer' name='[required_car_parking_spaces]' role='measure' type='quantitative' />
+      <column caption='Reservation Status' datatype='string' name='[reservation_status]' role='dimension' type='nominal' />
+      <column caption='Reserved Room Type' datatype='string' name='[reserved_room_type]' role='dimension' type='nominal' />
+      <column caption='Stays In Week Nights' datatype='integer' name='[stays_in_week_nights]' role='measure' type='quantitative' />
+      <column caption='Stays In Weekend Nights' datatype='integer' name='[stays_in_weekend_nights]' role='measure' type='quantitative' />
+      <column caption='Total Of Special Requests' datatype='integer' name='[total_of_special_requests]' role='measure' type='quantitative' />
+      <column-instance column='[lead_time]' derivation='Avg' name='[avg:lead_time:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[lead_time]' derivation='Count' name='[cnt:lead_time:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[lead_time]' derivation='Median' name='[med:lead_time:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[is_canceled]' derivation='None' name='[none:is_canceled:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[lead_time]' derivation='Stdev' name='[std:lead_time:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/USER/AppData/Local/Temp/TableauTemp/#TableauTemp_1yh8j9d0i91j88156d6x20rb2228.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='05/21/2025 03:12:18 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>hotel</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[hotel]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>hotel</remote-alias>
+              <ordinal>0</ordinal>
+              <family>data_bersih_hotel_bookings.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[data_bersih_hotel_bookings.csv_4721CAC8250C48B9BD4FC53674673D35]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>is_canceled</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[is_canceled]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>is_canceled</remote-alias>
+              <ordinal>1</ordinal>
+              <family>data_bersih_hotel_bookings.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[data_bersih_hotel_bookings.csv_4721CAC8250C48B9BD4FC53674673D35]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>lead_time</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[lead_time]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>lead_time</remote-alias>
+              <ordinal>2</ordinal>
+              <family>data_bersih_hotel_bookings.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>878</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[data_bersih_hotel_bookings.csv_4721CAC8250C48B9BD4FC53674673D35]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>arrival_date_week_number</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[arrival_date_week_number]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>arrival_date_week_number</remote-alias>
+              <ordinal>3</ordinal>
+              <family>data_bersih_hotel_bookings.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>53</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[data_bersih_hotel_bookings.csv_4721CAC8250C48B9BD4FC53674673D35]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>stays_in_weekend_nights</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[stays_in_weekend_nights]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>stays_in_weekend_nights</remote-alias>
+              <ordinal>4</ordinal>
+              <family>data_bersih_hotel_bookings.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[data_bersih_hotel_bookings.csv_4721CAC8250C48B9BD4FC53674673D35]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>stays_in_week_nights</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[stays_in_week_nights]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>stays_in_week_nights</remote-alias>
+              <ordinal>5</ordinal>
+              <family>data_bersih_hotel_bookings.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>32</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[data_bersih_hotel_bookings.csv_4721CAC8250C48B9BD4FC53674673D35]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>adults</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[adults]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>adults</remote-alias>
+              <ordinal>6</ordinal>
+              <family>data_bersih_hotel_bookings.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[data_bersih_hotel_bookings.csv_4721CAC8250C48B9BD4FC53674673D35]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>children</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[children]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>children</remote-alias>
+              <ordinal>7</ordinal>
+              <family>data_bersih_hotel_bookings.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[data_bersih_hotel_bookings.csv_4721CAC8250C48B9BD4FC53674673D35]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>babies</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[babies]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>babies</remote-alias>
+              <ordinal>8</ordinal>
+              <family>data_bersih_hotel_bookings.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[data_bersih_hotel_bookings.csv_4721CAC8250C48B9BD4FC53674673D35]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>meal</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[meal]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>meal</remote-alias>
+              <ordinal>9</ordinal>
+              <family>data_bersih_hotel_bookings.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[data_bersih_hotel_bookings.csv_4721CAC8250C48B9BD4FC53674673D35]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[country]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>country</remote-alias>
+              <ordinal>10</ordinal>
+              <family>data_bersih_hotel_bookings.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>152</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[data_bersih_hotel_bookings.csv_4721CAC8250C48B9BD4FC53674673D35]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>market_segment</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[market_segment]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>market_segment</remote-alias>
+              <ordinal>11</ordinal>
+              <family>data_bersih_hotel_bookings.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[data_bersih_hotel_bookings.csv_4721CAC8250C48B9BD4FC53674673D35]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>distribution_channel</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[distribution_channel]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>distribution_channel</remote-alias>
+              <ordinal>12</ordinal>
+              <family>data_bersih_hotel_bookings.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[data_bersih_hotel_bookings.csv_4721CAC8250C48B9BD4FC53674673D35]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>is_repeated_guest</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[is_repeated_guest]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>is_repeated_guest</remote-alias>
+              <ordinal>13</ordinal>
+              <family>data_bersih_hotel_bookings.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[data_bersih_hotel_bookings.csv_4721CAC8250C48B9BD4FC53674673D35]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>previous_cancellations</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[previous_cancellations]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>previous_cancellations</remote-alias>
+              <ordinal>14</ordinal>
+              <family>data_bersih_hotel_bookings.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[data_bersih_hotel_bookings.csv_4721CAC8250C48B9BD4FC53674673D35]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>previous_bookings_not_canceled</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[previous_bookings_not_canceled]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>previous_bookings_not_canceled</remote-alias>
+              <ordinal>15</ordinal>
+              <family>data_bersih_hotel_bookings.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>57</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[data_bersih_hotel_bookings.csv_4721CAC8250C48B9BD4FC53674673D35]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>reserved_room_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[reserved_room_type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>reserved_room_type</remote-alias>
+              <ordinal>16</ordinal>
+              <family>data_bersih_hotel_bookings.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[data_bersih_hotel_bookings.csv_4721CAC8250C48B9BD4FC53674673D35]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>assigned_room_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[assigned_room_type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>assigned_room_type</remote-alias>
+              <ordinal>17</ordinal>
+              <family>data_bersih_hotel_bookings.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[data_bersih_hotel_bookings.csv_4721CAC8250C48B9BD4FC53674673D35]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>booking_changes</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[booking_changes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>booking_changes</remote-alias>
+              <ordinal>18</ordinal>
+              <family>data_bersih_hotel_bookings.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>25</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[data_bersih_hotel_bookings.csv_4721CAC8250C48B9BD4FC53674673D35]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>deposit_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[deposit_type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>deposit_type</remote-alias>
+              <ordinal>19</ordinal>
+              <family>data_bersih_hotel_bookings.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[data_bersih_hotel_bookings.csv_4721CAC8250C48B9BD4FC53674673D35]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>agent</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[agent]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>agent</remote-alias>
+              <ordinal>20</ordinal>
+              <family>data_bersih_hotel_bookings.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>371</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[data_bersih_hotel_bookings.csv_4721CAC8250C48B9BD4FC53674673D35]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>days_in_waiting_list</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[days_in_waiting_list]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>days_in_waiting_list</remote-alias>
+              <ordinal>21</ordinal>
+              <family>data_bersih_hotel_bookings.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>292</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[data_bersih_hotel_bookings.csv_4721CAC8250C48B9BD4FC53674673D35]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>customer_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[customer_type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>customer_type</remote-alias>
+              <ordinal>22</ordinal>
+              <family>data_bersih_hotel_bookings.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[data_bersih_hotel_bookings.csv_4721CAC8250C48B9BD4FC53674673D35]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>adr</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[adr]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>adr</remote-alias>
+              <ordinal>23</ordinal>
+              <family>data_bersih_hotel_bookings.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4528</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[data_bersih_hotel_bookings.csv_4721CAC8250C48B9BD4FC53674673D35]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>required_car_parking_spaces</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[required_car_parking_spaces]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>required_car_parking_spaces</remote-alias>
+              <ordinal>24</ordinal>
+              <family>data_bersih_hotel_bookings.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[data_bersih_hotel_bookings.csv_4721CAC8250C48B9BD4FC53674673D35]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_of_special_requests</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[total_of_special_requests]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total_of_special_requests</remote-alias>
+              <ordinal>25</ordinal>
+              <family>data_bersih_hotel_bookings.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[data_bersih_hotel_bookings.csv_4721CAC8250C48B9BD4FC53674673D35]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>reservation_status</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[reservation_status]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>reservation_status</remote-alias>
+              <ordinal>26</ordinal>
+              <family>data_bersih_hotel_bookings.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[data_bersih_hotel_bookings.csv_4721CAC8250C48B9BD4FC53674673D35]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>arrival_date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[arrival_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>arrival_date</remote-alias>
+              <ordinal>27</ordinal>
+              <family>data_bersih_hotel_bookings.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>2715</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[data_bersih_hotel_bookings.csv_4721CAC8250C48B9BD4FC53674673D35]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:is_canceled:ok]' type='palette'>
+            <map to='#6394be'>
+              <bucket>0</bucket>
+            </map>
+            <map to='#afd6ed'>
+              <bucket>1</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Indonesia&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='data_bersih_hotel_bookings.csv' id='data_bersih_hotel_bookings.csv_4721CAC8250C48B9BD4FC53674673D35'>
+            <properties context=''>
+              <relation connection='textscan.1yv1w3r0m9eqrn15b51qs0qutnsb' name='data_bersih_hotel_bookings.csv' table='[data_bersih_hotel_bookings#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_ID'>
+                  <column datatype='string' name='hotel' ordinal='0' />
+                  <column datatype='integer' name='is_canceled' ordinal='1' />
+                  <column datatype='integer' name='lead_time' ordinal='2' />
+                  <column datatype='integer' name='arrival_date_week_number' ordinal='3' />
+                  <column datatype='integer' name='stays_in_weekend_nights' ordinal='4' />
+                  <column datatype='integer' name='stays_in_week_nights' ordinal='5' />
+                  <column datatype='integer' name='adults' ordinal='6' />
+                  <column datatype='string' name='children' ordinal='7' />
+                  <column datatype='integer' name='babies' ordinal='8' />
+                  <column datatype='string' name='meal' ordinal='9' />
+                  <column datatype='string' name='country' ordinal='10' />
+                  <column datatype='string' name='market_segment' ordinal='11' />
+                  <column datatype='string' name='distribution_channel' ordinal='12' />
+                  <column datatype='integer' name='is_repeated_guest' ordinal='13' />
+                  <column datatype='integer' name='previous_cancellations' ordinal='14' />
+                  <column datatype='integer' name='previous_bookings_not_canceled' ordinal='15' />
+                  <column datatype='string' name='reserved_room_type' ordinal='16' />
+                  <column datatype='string' name='assigned_room_type' ordinal='17' />
+                  <column datatype='integer' name='booking_changes' ordinal='18' />
+                  <column datatype='string' name='deposit_type' ordinal='19' />
+                  <column datatype='string' name='agent' ordinal='20' />
+                  <column datatype='integer' name='days_in_waiting_list' ordinal='21' />
+                  <column datatype='string' name='customer_type' ordinal='22' />
+                  <column datatype='string' name='adr' ordinal='23' />
+                  <column datatype='integer' name='required_car_parking_spaces' ordinal='24' />
+                  <column datatype='integer' name='total_of_special_requests' ordinal='25' />
+                  <column datatype='string' name='reservation_status' ordinal='26' />
+                  <column datatype='date' name='arrival_date' ordinal='27' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.1rve6yb1e80a2g18ki32m014kt9b'>
+      <datasources>
+        <datasource caption='data_bersih_hotel_bookings' name='federated.1rve6yb1e80a2g18ki32m014kt9b' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1rve6yb1e80a2g18ki32m014kt9b'>
+        <column caption='Deposit Type' datatype='string' name='[deposit_type]' role='dimension' type='nominal' />
+        <column caption='Hotel' datatype='string' name='[hotel]' role='dimension' type='nominal' />
+        <column-instance column='[deposit_type]' derivation='None' name='[none:deposit_type:nk]' pivot='key' type='nominal' />
+        <column-instance column='[hotel]' derivation='None' name='[none:hotel:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.1rve6yb1e80a2g18ki32m014kt9b].[none:deposit_type:nk]'>
+        <groupfilter function='level-members' level='[none:deposit_type:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='categorical' column='[federated.1rve6yb1e80a2g18ki32m014kt9b].[none:hotel:nk]'>
+        <groupfilter function='level-members' level='[none:hotel:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <actions>
+    <action caption='Highlight 1 (generated)' name='[Action1_075F0D777E7E457B834CA4DA33CC1370]'>
+      <activation auto-clear='true' type='on-select' />
+      <source type='sheet' worksheet='Distribusi Pembatalan Reservasi' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Is Canceled' />
+        <param name='target' value='Distribusi Pembatalan Reservasi' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Distribusi Pembatalan Reservasi'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='data_bersih_hotel_bookings' name='federated.1rve6yb1e80a2g18ki32m014kt9b' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1rve6yb1e80a2g18ki32m014kt9b'>
+            <column-instance column='[is_canceled]' derivation='Count' name='[cnt:is_canceled:qk]' pivot='key' type='quantitative' />
+            <column caption='Deposit Type' datatype='string' name='[deposit_type]' role='dimension' type='nominal' />
+            <column caption='Hotel' datatype='string' name='[hotel]' role='dimension' type='nominal' />
+            <column aggregation='Sum' caption='Is Canceled' datatype='integer' name='[is_canceled]' role='dimension' type='ordinal' />
+            <column-instance column='[deposit_type]' derivation='None' name='[none:deposit_type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[hotel]' derivation='None' name='[none:hotel:nk]' pivot='key' type='nominal' />
+            <column-instance column='[is_canceled]' derivation='None' name='[none:is_canceled:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1rve6yb1e80a2g18ki32m014kt9b].[none:hotel:nk]</column>
+            <column>[federated.1rve6yb1e80a2g18ki32m014kt9b].[none:deposit_type:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.1rve6yb1e80a2g18ki32m014kt9b].[none:is_canceled:ok]' value='Pembatalan'>
+              <formatted-text>
+                <run>Pembatalan</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1rve6yb1e80a2g18ki32m014kt9b].[none:is_canceled:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1rve6yb1e80a2g18ki32m014kt9b].[cnt:is_canceled:qk]</rows>
+        <cols>[federated.1rve6yb1e80a2g18ki32m014kt9b].[none:is_canceled:ok]</cols>
+      </table>
+      <simple-id uuid='{11B0F918-9DFB-4646-AAB2-1E1AD40D3518}' />
+    </worksheet>
+    <worksheet name='Pembatalan Berdasarkan Lead Time'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='data_bersih_hotel_bookings' name='federated.1rve6yb1e80a2g18ki32m014kt9b' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1rve6yb1e80a2g18ki32m014kt9b'>
+            <column caption='Deposit Type' datatype='string' name='[deposit_type]' role='dimension' type='nominal' />
+            <column caption='Hotel' datatype='string' name='[hotel]' role='dimension' type='nominal' />
+            <column aggregation='Sum' caption='Is Canceled' datatype='integer' name='[is_canceled]' role='dimension' type='ordinal' />
+            <column caption='Lead Time' datatype='integer' name='[lead_time]' role='measure' type='quantitative' />
+            <column-instance column='[deposit_type]' derivation='None' name='[none:deposit_type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[hotel]' derivation='None' name='[none:hotel:nk]' pivot='key' type='nominal' />
+            <column-instance column='[is_canceled]' derivation='None' name='[none:is_canceled:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[lead_time]' derivation='Sum' name='[sum:lead_time:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1rve6yb1e80a2g18ki32m014kt9b].[none:hotel:nk]</column>
+            <column>[federated.1rve6yb1e80a2g18ki32m014kt9b].[none:deposit_type:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1rve6yb1e80a2g18ki32m014kt9b].[none:is_canceled:ok]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1rve6yb1e80a2g18ki32m014kt9b].[sum:lead_time:qk]</rows>
+        <cols>[federated.1rve6yb1e80a2g18ki32m014kt9b].[none:is_canceled:ok]</cols>
+      </table>
+      <simple-id uuid='{6EEC772C-F663-45BA-B09C-87095A7A373C}' />
+    </worksheet>
+    <worksheet name='Pembatalan Berdasarkan Tipe Hotel'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='data_bersih_hotel_bookings' name='federated.1rve6yb1e80a2g18ki32m014kt9b' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1rve6yb1e80a2g18ki32m014kt9b'>
+            <column-instance column='[is_canceled]' derivation='Count' name='[cnt:is_canceled:qk]' pivot='key' type='quantitative' />
+            <column caption='Deposit Type' datatype='string' name='[deposit_type]' role='dimension' type='nominal' />
+            <column caption='Hotel' datatype='string' name='[hotel]' role='dimension' type='nominal' />
+            <column aggregation='Sum' caption='Is Canceled' datatype='integer' name='[is_canceled]' role='dimension' type='ordinal' />
+            <column-instance column='[deposit_type]' derivation='None' name='[none:deposit_type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[hotel]' derivation='None' name='[none:hotel:nk]' pivot='key' type='nominal' />
+            <column-instance column='[is_canceled]' derivation='None' name='[none:is_canceled:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[is_canceled]' derivation='Sum' name='[sum:is_canceled:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1rve6yb1e80a2g18ki32m014kt9b].[none:hotel:nk]</column>
+            <column>[federated.1rve6yb1e80a2g18ki32m014kt9b].[none:deposit_type:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.1rve6yb1e80a2g18ki32m014kt9b].[sum:is_canceled:qk]' value='n#,##0.00;-#,##0.00' />
+            <format attr='text-format' field='[federated.1rve6yb1e80a2g18ki32m014kt9b].[cnt:is_canceled:qk]' value='n#,##0.00;-#,##0.00' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1rve6yb1e80a2g18ki32m014kt9b].[sum:is_canceled:qk]' palette='blue_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1rve6yb1e80a2g18ki32m014kt9b].[sum:is_canceled:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1rve6yb1e80a2g18ki32m014kt9b].[cnt:is_canceled:qk]</rows>
+        <cols>([federated.1rve6yb1e80a2g18ki32m014kt9b].[none:hotel:nk] / [federated.1rve6yb1e80a2g18ki32m014kt9b].[none:is_canceled:ok])</cols>
+      </table>
+      <simple-id uuid='{3A996F66-A826-4A94-9514-BE8EA739D928}' />
+    </worksheet>
+    <worksheet name='Pembatalan Berdasarkan Type Deposit'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='data_bersih_hotel_bookings' name='federated.1rve6yb1e80a2g18ki32m014kt9b' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1rve6yb1e80a2g18ki32m014kt9b'>
+            <column-instance column='[is_canceled]' derivation='Count' name='[cnt:is_canceled:qk]' pivot='key' type='quantitative' />
+            <column caption='Deposit Type' datatype='string' name='[deposit_type]' role='dimension' type='nominal' />
+            <column caption='Hotel' datatype='string' name='[hotel]' role='dimension' type='nominal' />
+            <column aggregation='Sum' caption='Is Canceled' datatype='integer' name='[is_canceled]' role='dimension' type='ordinal' />
+            <column-instance column='[deposit_type]' derivation='None' name='[none:deposit_type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[hotel]' derivation='None' name='[none:hotel:nk]' pivot='key' type='nominal' />
+            <column-instance column='[is_canceled]' derivation='None' name='[none:is_canceled:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[is_canceled]' derivation='Sum' name='[sum:is_canceled:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1rve6yb1e80a2g18ki32m014kt9b].[none:is_canceled:ok]' direction='ASC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1rve6yb1e80a2g18ki32m014kt9b].[sum:is_canceled:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1rve6yb1e80a2g18ki32m014kt9b].[none:hotel:nk]</column>
+            <column>[federated.1rve6yb1e80a2g18ki32m014kt9b].[none:deposit_type:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1rve6yb1e80a2g18ki32m014kt9b].[sum:is_canceled:qk]' value='n#,##0;-#,##0' />
+            <format attr='text-format' field='[federated.1rve6yb1e80a2g18ki32m014kt9b].[cnt:is_canceled:qk]' value='n#,##0;-#,##0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1rve6yb1e80a2g18ki32m014kt9b].[sum:is_canceled:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.1rve6yb1e80a2g18ki32m014kt9b].[none:deposit_type:nk] / [federated.1rve6yb1e80a2g18ki32m014kt9b].[none:is_canceled:ok])</rows>
+        <cols>[federated.1rve6yb1e80a2g18ki32m014kt9b].[cnt:is_canceled:qk]</cols>
+      </table>
+      <simple-id uuid='{F5CEE3FC-14C9-4181-9FC9-E848A558AE3A}' />
+    </worksheet>
+    <worksheet name='Sheet 5'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontname='Tableau Bold' fontsize='14'>Statistik Deskriptif</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='data_bersih_hotel_bookings' name='federated.1rve6yb1e80a2g18ki32m014kt9b' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1rve6yb1e80a2g18ki32m014kt9b'>
+            <column-instance column='[lead_time]' derivation='Avg' name='[avg:lead_time:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[lead_time]' derivation='Count' name='[cnt:lead_time:qk]' pivot='key' type='quantitative' />
+            <column caption='Deposit Type' datatype='string' name='[deposit_type]' role='dimension' type='nominal' />
+            <column caption='Hotel' datatype='string' name='[hotel]' role='dimension' type='nominal' />
+            <column aggregation='Sum' caption='Is Canceled' datatype='integer' name='[is_canceled]' role='dimension' type='ordinal' />
+            <column caption='Lead Time' datatype='integer' name='[lead_time]' role='measure' type='quantitative' />
+            <column-instance column='[lead_time]' derivation='Median' name='[med:lead_time:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[deposit_type]' derivation='None' name='[none:deposit_type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[hotel]' derivation='None' name='[none:hotel:nk]' pivot='key' type='nominal' />
+            <column-instance column='[is_canceled]' derivation='None' name='[none:is_canceled:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[lead_time]' derivation='Stdev' name='[std:lead_time:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1rve6yb1e80a2g18ki32m014kt9b].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1rve6yb1e80a2g18ki32m014kt9b].[avg:lead_time:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1rve6yb1e80a2g18ki32m014kt9b].[med:lead_time:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1rve6yb1e80a2g18ki32m014kt9b].[std:lead_time:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1rve6yb1e80a2g18ki32m014kt9b].[cnt:lead_time:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.1rve6yb1e80a2g18ki32m014kt9b].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.1rve6yb1e80a2g18ki32m014kt9b].[avg:lead_time:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1rve6yb1e80a2g18ki32m014kt9b].[med:lead_time:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1rve6yb1e80a2g18ki32m014kt9b].[std:lead_time:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1rve6yb1e80a2g18ki32m014kt9b].[cnt:lead_time:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.1rve6yb1e80a2g18ki32m014kt9b].[none:deposit_type:nk]</column>
+            <column>[federated.1rve6yb1e80a2g18ki32m014kt9b].[none:hotel:nk]</column>
+            <column>[federated.1rve6yb1e80a2g18ki32m014kt9b].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1rve6yb1e80a2g18ki32m014kt9b].[:Measure Names]' value='160' />
+            <format attr='height' field='[federated.1rve6yb1e80a2g18ki32m014kt9b].[none:is_canceled:ok]' value='73' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.1rve6yb1e80a2g18ki32m014kt9b].[none:is_canceled:ok]' value='24' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1rve6yb1e80a2g18ki32m014kt9b].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1rve6yb1e80a2g18ki32m014kt9b].[none:is_canceled:ok]</rows>
+        <cols>[federated.1rve6yb1e80a2g18ki32m014kt9b].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{4450C770-8A22-4073-9893-143FB7B3CDA3}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size sizing-mode='automatic' />
+      <datasources>
+        <datasource caption='data_bersih_hotel_bookings' name='federated.1rve6yb1e80a2g18ki32m014kt9b' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1rve6yb1e80a2g18ki32m014kt9b'>
+        <column caption='Deposit Type' datatype='string' name='[deposit_type]' role='dimension' type='nominal' />
+        <column caption='Hotel' datatype='string' name='[hotel]' role='dimension' type='nominal' />
+        <column-instance column='[deposit_type]' derivation='None' name='[none:deposit_type:nk]' pivot='key' type='nominal' />
+        <column-instance column='[hotel]' derivation='None' name='[none:hotel:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98030' id='16' param='vert' type-v2='layout-flow' w='98984' x='508' y='985'>
+            <zone h='98030' id='14' type-v2='layout-basic' w='98984' x='508' y='985'>
+              <zone h='98030' id='8' param='horz' type-v2='layout-flow' w='98984' x='508' y='985'>
+                <zone h='98030' id='6' type-v2='layout-basic' w='82921' x='508' y='985'>
+                  <zone h='49010' id='5' name='Distribusi Pembatalan Reservasi' w='41456' x='508' y='985'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='49010' id='10' name='Pembatalan Berdasarkan Tipe Hotel' w='41465' x='41964' y='985'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='49020' id='12' name='Pembatalan Berdasarkan Lead Time' w='41462' x='41967' y='49995'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='49020' id='13' name='Pembatalan Berdasarkan Type Deposit' w='41459' x='508' y='49995'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+                <zone fixed-size='253' h='98030' id='7' is-fixed='true' param='vert' type-v2='layout-flow' w='16063' x='83429' y='985'>
+                  <zone h='10345' id='9' name='Distribusi Pembatalan Reservasi' pane-specification-id='1' param='[federated.1rve6yb1e80a2g18ki32m014kt9b].[none:is_canceled:ok]' type-v2='color' w='16063' x='83429' y='985'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='18226' id='17' mode='checklist' name='Pembatalan Berdasarkan Tipe Hotel' param='[federated.1rve6yb1e80a2g18ki32m014kt9b].[none:deposit_type:nk]' type-v2='filter' values='database' w='16063' x='83429' y='11330'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='14901' id='18' mode='checklist' name='Pembatalan Berdasarkan Tipe Hotel' param='[federated.1rve6yb1e80a2g18ki32m014kt9b].[none:hotel:nk]' type-v2='filter' values='database' w='16063' x='83429' y='29556'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='8314' id='11' name='Pembatalan Berdasarkan Tipe Hotel' pane-specification-id='0' param='[federated.1rve6yb1e80a2g18ki32m014kt9b].[sum:is_canceled:qk]' type-v2='color' w='12718' x='499' y='90531' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1450' minheight='1450' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='22' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98152' id='21' param='vert' type-v2='layout-flow' w='99002' x='499' y='924'>
+                <zone fixed-size='280' h='49074' id='5' is-fixed='true' name='Distribusi Pembatalan Reservasi' w='41614' x='499' y='924'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9700' id='9' name='Distribusi Pembatalan Reservasi' pane-specification-id='1' param='[federated.1rve6yb1e80a2g18ki32m014kt9b].[none:is_canceled:ok]' type-v2='color' w='15773' x='83728' y='924'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='17090' id='17' mode='checkdropdown' name='Pembatalan Berdasarkan Tipe Hotel' param='[federated.1rve6yb1e80a2g18ki32m014kt9b].[none:deposit_type:nk]' type-v2='filter' values='database' w='15773' x='83728' y='10624'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='13972' id='18' mode='checkdropdown' name='Pembatalan Berdasarkan Tipe Hotel' param='[federated.1rve6yb1e80a2g18ki32m014kt9b].[none:hotel:nk]' type-v2='filter' values='database' w='15773' x='83728' y='27714'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49074' id='10' is-fixed='true' name='Pembatalan Berdasarkan Tipe Hotel' w='41615' x='42113' y='924'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8314' id='11' name='Pembatalan Berdasarkan Tipe Hotel' pane-specification-id='0' param='[federated.1rve6yb1e80a2g18ki32m014kt9b].[sum:is_canceled:qk]' type-v2='color' w='12718' x='499' y='90531'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49078' id='13' is-fixed='true' name='Pembatalan Berdasarkan Type Deposit' w='41615' x='499' y='49998'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49078' id='12' is-fixed='true' name='Pembatalan Berdasarkan Lead Time' w='41614' x='42114' y='49998'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{BEA5B511-8968-4CF2-835A-3B5BBA9796D6}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 2'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='84873' id='13' param='horz' type-v2='layout-flow' w='99002' x='499' y='14203'>
+            <zone h='84873' id='10' param='horz' type-v2='layout-flow' w='99002' x='499' y='14203'>
+              <zone h='84873' id='7' param='horz' type-v2='layout-flow' w='99002' x='499' y='14203'>
+                <zone h='84873' id='5' type-v2='layout-basic' w='99002' x='499' y='14203'>
+                  <zone h='84873' id='3' name='Sheet 5' w='49500' x='499' y='14203'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone forceUpdate='true' h='52822' id='11' type-v2='text' w='49502' x='49999' y='14203'>
+                    <formatted-text>
+                      <run bold='true' fontcolor='#000000' fontname='Tableau Bold' fontsize='15'>Statistik Inferensial</run>
+                      <run>Æ&#10;</run>
+                      <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='11'>Untuk mengetahui apakah perbedaan rata-rata lead time ini benar-benar signifikan secara statistik, kami melakukan uji hipotesis (t-test dua sampel independen).</run>
+                      <run>Æ&#10;&#10;</run>
+                      <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='11'>Hipotesis yang diuji:</run>
+                      <run>Æ&#10;</run>
+                      <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='11'>- H0 (nol): Tidak ada perbedaan rata-rata lead time antara reservasi yang dibatalkan dan tidak.</run>
+                      <run>Æ&#10;</run>
+                      <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='11'>- H1 (alternatif): Ada perbedaan rata-rata lead time antara keduanya.</run>
+                      <run>Æ&#10;&#10;</run>
+                      <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='11'>Hasil uji:</run>
+                      <run>Æ&#10;</run>
+                      <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='11'>p-value = 0.00000</run>
+                      <run>Æ&#10;&#10;</run>
+                      <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='11'>Insight:</run>
+                      <run>Æ&#10;</run>
+                      <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='11'>Hasil uji t ini menguatkan hasil deskriptif sebelumnya. Perbedaan lead time antara pelanggan yang membatalkan dan tidak membatalkan reservasi bukan sekadar kebetulan, tapi benar-benar signifikan secara statistik. </run>
+                    </formatted-text>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone forceUpdate='true' h='32051' id='14' type-v2='text' w='49502' x='49999' y='67025'>
+                    <formatted-text>
+                      <run bold='true' fontcolor='#000000' fontname='Tableau Bold' fontsize='14'>Kesimpulan</run>
+                      <run>Æ&#10;</run>
+                      <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='11'>Pelanggan yang memesan kamar dengan lead time yang lebih panjang memiliki kemungkinan lebih besar untuk membatalkan reservasi. Hal ini didukung baik oleh analisis deskriptif maupun inferensial.
+Lead time bisa menjadi indikator penting dalam memprediksi pembatalan, dan dapat digunakan sebagai dasar untuk strategi pencegahan seperti reminder otomatis, penawaran fleksibel, atau kebijakan pembayaran bertahap.</run>
+                    </formatted-text>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='13279' id='15' type-v2='empty' w='1995' x='97506' y='924'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone forceUpdate='true' h='13279' id='16' type-v2='text' w='97007' x='499' y='924'>
+            <formatted-text>
+              <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Britannic Bold' fontsize='20'>Statistical Analysis: Analisis Statistik dan Simpulan</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone forceUpdate='true' h='24018' id='8' type-v2='text' w='41147' x='748' y='41339'>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontname='Tableau Bold' fontsize='14'>Analisa Deskriptif:</run>
+            <run>Æ&#10;</run>
+            <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'>Pelanggan yang membatalkan reservasi cenderung melakukan pemesanan lebih awal dibandingkan dengan yang tidak membatalkan. Median dan rata-ratanya menunjukkan perbedaan yang cukup besar, menandakan pola yang konsisten. </run>
+          </formatted-text>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='20' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98152' id='19' param='vert' type-v2='layout-flow' w='99002' x='499' y='924'>
+                <zone forceUpdate='true' h='13279' id='16' type-v2='text' w='97007' x='499' y='924'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Britannic Bold' fontsize='20'>Statistical Analysis: Analisis Statistik dan Simpulan</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='84873' id='3' is-fixed='true' name='Sheet 5' w='49500' x='499' y='14203'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='52822' id='11' type-v2='text' w='49502' x='49999' y='14203'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#000000' fontname='Tableau Bold' fontsize='15'>Statistik Inferensial</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='11'>Untuk mengetahui apakah perbedaan rata-rata lead time ini benar-benar signifikan secara statistik, kami melakukan uji hipotesis (t-test dua sampel independen).</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='11'>Hipotesis yang diuji:</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='11'>- H0 (nol): Tidak ada perbedaan rata-rata lead time antara reservasi yang dibatalkan dan tidak.</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='11'>- H1 (alternatif): Ada perbedaan rata-rata lead time antara keduanya.</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='11'>Hasil uji:</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='11'>p-value = 0.00000</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='11'>Insight:</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='11'>Hasil uji t ini menguatkan hasil deskriptif sebelumnya. Perbedaan lead time antara pelanggan yang membatalkan dan tidak membatalkan reservasi bukan sekadar kebetulan, tapi benar-benar signifikan secara statistik. </run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='24018' id='8' type-v2='text' w='41147' x='748' y='41339'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#000000' fontname='Tableau Bold' fontsize='14'>Analisa Deskriptif:</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'>Pelanggan yang membatalkan reservasi cenderung melakukan pemesanan lebih awal dibandingkan dengan yang tidak membatalkan. Median dan rata-ratanya menunjukkan perbedaan yang cukup besar, menandakan pola yang konsisten. </run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='32051' id='14' type-v2='text' w='49502' x='49999' y='67025'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#000000' fontname='Tableau Bold' fontsize='14'>Kesimpulan</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='11'>Pelanggan yang memesan kamar dengan lead time yang lebih panjang memiliki kemungkinan lebih besar untuk membatalkan reservasi. Hal ini didukung baik oleh analisis deskriptif maupun inferensial.
+Lead time bisa menjadi indikator penting dalam memprediksi pembatalan, dan dapat digunakan sebagai dasar untuk strategi pencegahan seperti reminder otomatis, penawaran fleksibel, atau kebijakan pembayaran bertahap.</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{806C07C1-9050-4D1F-9635-61B1F3EBED32}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' name='Distribusi Pembatalan Reservasi'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1rve6yb1e80a2g18ki32m014kt9b].[none:deposit_type:nk]' type='filter' />
+            <card param='[federated.1rve6yb1e80a2g18ki32m014kt9b].[none:hotel:nk]' type='filter' />
+            <card pane-specification-id='1' param='[federated.1rve6yb1e80a2g18ki32m014kt9b].[none:is_canceled:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{4F1BD3D4-12DB-45FB-962B-CEF8C5F650A2}' />
+    </window>
+    <window class='worksheet' name='Pembatalan Berdasarkan Tipe Hotel'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1rve6yb1e80a2g18ki32m014kt9b].[sum:is_canceled:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{0A540D0B-2909-4744-927F-006970C7606F}' />
+    </window>
+    <window class='worksheet' name='Pembatalan Berdasarkan Lead Time'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1rve6yb1e80a2g18ki32m014kt9b].[none:is_canceled:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{C2D2C3B1-8241-4B5A-B884-FFFDC7EC285B}' />
+    </window>
+    <window class='worksheet' name='Pembatalan Berdasarkan Type Deposit'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1rve6yb1e80a2g18ki32m014kt9b].[sum:is_canceled:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{BD5F50E2-E0CD-4A12-97B7-69B674D1F6BA}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Distribusi Pembatalan Reservasi'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Pembatalan Berdasarkan Lead Time'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Pembatalan Berdasarkan Tipe Hotel'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Pembatalan Berdasarkan Type Deposit'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <device-preview visible='true' />
+      <simple-id uuid='{D0E2046F-1768-43EE-9219-BABFA45610F1}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{AE523008-0B14-4509-AC46-2E4AF18CDCD9}' />
+    </window>
+    <window class='dashboard' name='Dashboard 2'>
+      <viewpoints>
+        <viewpoint name='Sheet 5' />
+      </viewpoints>
+      <active id='3' />
+      <simple-id uuid='{17A6FAB6-02FE-480B-8AFC-6C38E6DE20E8}' />
+    </window>
+  </windows>
+</workbook>
