@@ -62,6 +62,9 @@ Beberapa tools dan library yang digunakan :
 
 * Github: menyimpan dan membagikan project
 
+## Screenshot
+![alt text](Dashboard.png)
+
 
 ## Reference
 - [Pandas Tutorial - W3schools](https://www.w3schools.com/python/pandas/default.asp)
